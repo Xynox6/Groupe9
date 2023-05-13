@@ -54,22 +54,37 @@ int16_t main(void)
     InitApp(); //user.c
     
     //infinite loop (1 -> true)
+    /*
+     led rouge -> arret
+     led vert -> marche
+     */
     while (1) {
         //servo 1
-        PTPER = PDC1= convert_deg(180);
-        __delay_ms(2000);
         
-        PDC1 = convert_deg(0);
-        __delay_ms(2000);
-        
-        //servo 2
+        PTPER = PDC1 = convert_deg(0);
+        __delay_ms(1000);
+               
+        PTPER = PDC1 = convert_deg(180);
+        __delay_ms(1000);
         
         PTPER = PDC2 = convert_deg(180);
-        __delay_ms(2000);
+        __delay_ms(1000);
         
-        PDC2 = convert_deg(0);
-        __delay_ms(2000);
-         
+        PTPER = PDC2 = convert_deg(90);
+        __delay_ms(1000);
+        
+        PTPER = PDC2 = convert_deg(0);
+        __delay_ms(1000);
+        
+        PTPER = PDC3 = convert_deg(0);
+        __delay_ms(1000);
+        
+        PTPER = PDC3 = convert_deg(90);
+        __delay_ms(1000);
+        
+        PTPER = PDC3 = convert_deg(0);
+        __delay_ms(1000);
+    
     }
     return 0;
 }
