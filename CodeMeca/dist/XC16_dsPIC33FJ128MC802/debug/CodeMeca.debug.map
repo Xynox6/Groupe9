@@ -64,6 +64,8 @@ d:/games/mplab/bin/bin/../../lib\libm-elf.a(addsf3.eo)
                               build/XC16_dsPIC33FJ128MC802/debug/main.o (___subsf3)
 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divsf3.eo)
                               build/XC16_dsPIC33FJ128MC802/debug/main.o (___divsf3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(feqltle.eo)
+                              build/XC16_dsPIC33FJ128MC802/debug/main.o (___ltsf2)
 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fixsfsi.eo)
                               build/XC16_dsPIC33FJ128MC802/debug/main.o (_(float, int, long long, short, float, short, int))
 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
@@ -78,10 +80,154 @@ d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
                               d:/games/mplab/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__fPropagateNaN)
 d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
                               build/XC16_dsPIC33FJ128MC802/debug/main.o (___mulsf3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(fcompare.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(feqltle.eo) (__fcompare)
 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
                               d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsisf.eo) (___floatdisf)
 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
                               d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdisf.eo) (___floatundisf)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(puts.XX_eo)
+                              build/XC16_dsPIC33FJ128MC802/debug/main.o (_puts)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(puts.XX_eo) (__Stdout)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputc.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(puts.XX_eo) (_fputc)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo)
+                              build/XC16_dsPIC33FJ128MC802/debug/main.o (__scanf_cdfFnopuxX)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo) (___Scanf_cdfFnopuxX)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(isspace.XX_eso)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo) (_isspace)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputc.XX_elo) (__DNKfflush)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fgetc.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo) (_fgetc)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo) (_strchr)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(ungetc.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo) (_ungetc)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo) (__Vacopy)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdfFnopuxX.XXeo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo) (___Getfld_cdfFnopuxX)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputs.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(puts.XX_eo) (_fputs)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputs.XX_eo) (_memcpy)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputs.XX_eo) (_strlen)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strrchr.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputs.XX_eo) (_strrchr)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfrprep.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fgetc.XX_eo) (__Frprep)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputc.XX_elo) (__Fwprep)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdfFnopuxX.XXeo) (__Getint)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdfFnopuxX.XXeo) (__Getstr)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo) (__Stoll)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo) (__Stoull)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(tolower.XX_elso)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo) (_tolower)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo) (_errno)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo) (__Closreg)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xatexit.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (__Atexit)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdfFnopuxX.XXeo) (___Getfloat_cdfFnopuxX)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(printf_s.XXeo)
+                              build/XC16_dsPIC33FJ128MC802/debug/main.o (__printf_0)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xprintf_s.XXeo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(printf_s.XXeo) (___Printf_s)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xputfld_s.XXeo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xprintf_s.XXeo) (___Putfld_s)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(isalnum.XX_eso)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo) (_isalnum)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (_free)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fwrite.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(printf_s.XXeo) (_fwrite)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo) (__Aldata)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo) (_memchr)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo) (__Getmem)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo) (__LDscale)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xprintf_s.XXeo) (__Puttxt)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo) (__Stold)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstopfx.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (__Stopfx)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoxflt.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (__Stoxflt)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_eo) (__Dnorm)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (__LDtento)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo) (__LDunscale)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoflt.XX_elo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (__Stoflt)
+d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xferaise.XX_eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo) (__Feraise)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(read.Leo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfrprep.XX_eo) (_read)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (_close)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_eo) (_write)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (_remove)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo) (_sbrk)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(c30_uart.Leo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(read.Leo) (___C30_UART)
+d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo) (_brk)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(adddf3.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (___adddf3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(deqltle.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo) (___eqdf2)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(divdf3.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo) (___divdf3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(dpack.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(adddf3.eo) (__dpack)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(adddf3.eo) (__dunpack2)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (___floatsidf)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldf3.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo) (___muldf3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(truncdfsf.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo) (___truncdfsf2)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (___mulsi3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo) (___udivdi3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+                              d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo) (___muldi3)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(dcompare.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(deqltle.eo) (__dcompare)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack2.eo) (__dPropagateNaN)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(dtype.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(dcompare.eo) (__dtype)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack2.eo) (__dunpack)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsidf.eo) (___floatdidf)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdidf.eo) (___floatundidf)
+d:/games/mplab/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+                              d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldi3.eo) (___umuldi3)
 
 
 Selected CodeGuard Options:
@@ -115,20 +261,26 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x41e           0x62d  (1581)
-.text                        0x61e                0xe2           0x153  (339)
-.init.delay32                0x700                0x1c            0x2a  (42)
-.text                        0x71c                 0x6             0x9  (9)
+.text                        0x200              0x316e          0x4a25  (18981)
+.const                      0x336e                0x6a            0x9f  (159)
+.dinit                      0x33d8               0x1b4           0x28e  (654)
+.text                       0x358c               0x1dc           0x2ca  (714)
+.init.delay32               0x3768                0x1c            0x2a  (42)
+.text                       0x3784                 0x6             0x9  (9)
 
-                 Total "program" memory used (bytes):          0x7b3  (1971) 1%
+                 Total "program" memory used (bytes):         0x504f  (20559) 15%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x4000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
+.data                        0x800                   0           0x1ec  (492)
+.bss                         0x9ec                   0             0xa  (10)
+.data                        0x9f6                   0             0x4  (4)
+.bss                         0x9fa                   0             0x2  (2)
 
-                 Total "data" memory used (bytes):              0  (0) 
+                 Total "data" memory used (bytes):          0x1fc  (508) 3%
 
 
 Dynamic Memory Usage
@@ -136,12 +288,38 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x800                              0x4000  (16384)
+stack                        0x9fc                              0x3e04  (15876)
 
-                 Maximum dynamic memory (bytes):         0x4000  (16384)
+                 Maximum dynamic memory (bytes):         0x3e04  (15876)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
+
+External Symbols in Data Memory (by address):
+
+                    0x0800                  __Stdin
+                    0x0828                  __Stdout
+                    0x0850                  __Stderr
+                    0x0878                  __Files
+                    0x09ec                  _errno
+                    0x09ee                  __Tls_setup_errno
+                    0x09f0                  __Aldata
+                    0x09f6                  __Size_block
+                    0x09f8                  ___C30_UART
+                    0x09fa                  ___curbrk
+
+External Symbols in Data Memory (by name):
+
+                    0x09f0                  __Aldata
+                    0x0878                  __Files
+                    0x09f6                  __Size_block
+                    0x0850                  __Stderr
+                    0x0800                  __Stdin
+                    0x0828                  __Stdout
+                    0x09ee                  __Tls_setup_errno
+                    0x09f8                  ___C30_UART
+                    0x09fa                  ___curbrk
+                    0x09ec                  _errno
 
 External Symbols in Program Memory (by address):
 
@@ -149,81 +327,245 @@ External Symbols in Program Memory (by address):
                   0x00023c                  __psv_init
                   0x000252                  __data_init_standard
                   0x000252                  __data_init
-                  0x0002c8                  __OscillatorFail
-                  0x0002ce                  __AddressError
-                  0x0002d4                  __StackError
-                  0x0002da                  __MathError
-                  0x0002e0                  __DMACError
-                  0x0002e6                  __AltOscillatorFail
-                  0x0002ec                  __AltAddressError
-                  0x0002f2                  __AltStackError
-                  0x0002f8                  __AltMathError
-                  0x0002fe                  __AltDMACError
-                  0x000304                  __DefaultInterrupt
-                  0x00030a                  ___subsf3
-                  0x00030c                  ___addsf3
-                  0x0003c6                  ___divsf3
-                  0x00044a                  ___fixsfsi
-                  0x00048c                  ___floatsisf
-                  0x000492                  __fpack
-                  0x0004de                  __funpack
-                  0x000508                  __funpack2
-                  0x000518                  __fPropagateNaN
-                  0x00052a                  __fbopExit
-                  0x000532                  __fbopReturnNaN
-                  0x000538                  ___mulsf3
-                  0x0005a0                  ___floatdisf
-                  0x0005c0                  ___floatundisf
-                  0x00061e                  _convert_rad
-                  0x00065c                  _convert_deg
-                  0x00069a                  _main
-                  0x0006c8                  _InitApp
-                  0x000700                  ___delay32
-                  0x00071c                  _ConfigureOscillator
+                  0x0002d8                  __OscillatorFail
+                  0x0002de                  __AddressError
+                  0x0002e4                  __StackError
+                  0x0002ea                  __MathError
+                  0x0002f0                  __DMACError
+                  0x0002f6                  __AltOscillatorFail
+                  0x0002fc                  __AltAddressError
+                  0x000302                  __AltStackError
+                  0x000308                  __AltMathError
+                  0x00030e                  __AltDMACError
+                  0x000314                  __DefaultInterrupt
+                  0x000494                  ___subsf3
+                  0x000496                  ___addsf3
+                  0x000550                  ___divsf3
+                  0x0005d4                  ___lesf2
+                  0x0005d4                  ___eqsf2
+                  0x0005d4                  ___ltsf2
+                  0x0005d8                  ___fixsfsi
+                  0x00061a                  ___floatsisf
+                  0x000620                  __fpack
+                  0x00066c                  __funpack
+                  0x000696                  __funpack2
+                  0x0006a6                  __fPropagateNaN
+                  0x0006b8                  __fbopExit
+                  0x0006c0                  __fbopReturnNaN
+                  0x0006c6                  ___mulsf3
+                  0x00072e                  __fcompare
+                  0x000764                  ___floatdisf
+                  0x000784                  ___floatundisf
+                  0x0007e2                  _puts
+                  0x0007f8                  _fputc
+                  0x000846                  scanf_cdfFnopuxX.XXeo:_scin
+                  0x000854                  __scanf_cdfFnopuxX
+                  0x000864                  ___Scanf_cdfFnopuxX
+                  0x0009f4                  _isspace
+                  0x000a04                  __DNKfflush
+                  0x000a7a                  _fgetc
+                  0x000abe                  _strchr
+                  0x000ad6                  _ungetc
+                  0x000b14                  __Vacopy
+                  0x000b18                  ___Getfld_cdfFnopuxX
+                  0x000c62                  _fputs
+                  0x000cf2                  _memcpy
+                  0x000d00                  _strlen
+                  0x000d0c                  _strrchr
+                  0x000d20                  __Frprep
+                  0x000dbc                  __Fwprep
+                  0x000e4a                  __Getint
+                  0x001140                  __Getstr
+                  0x00132e                  __Stoll
+                  0x0013dc                  __Stoull
+                  0x00156c                  _tolower
+                  0x00157a                  __Geterrno
+                  0x00158a                  __Closreg
+                  0x00159c                  _fclose
+                  0x00162c                  fclose.XX_elo:_closeall
+                  0x00164c                  __Atexit
+                  0x001664                  ___Getfloat_cdfFnopuxX
+                  0x001c58                  printf_s.XXeo:_prout
+                  0x001c74                  __printf_s
+                  0x001c74                  __printf_0
+                  0x001c84                  ___Printf_s
+                  0x001de8                  ___Putfld_s
+                  0x001e46                  _isalnum
+                  0x001e62                  _free
+                  0x001ec6                  _fwrite
+                  0x001fd4                  _malloc
+                  0x002028                  _memchr
+                  0x00203c                  __Getmem
+                  0x002050                  __LDscale
+                  0x002144                  __Puttxt
+                  0x0022bc                  __Stold
+                  0x002458                  __Stopfx
+                  0x00257a                  __Stoxflt
+                  0x00276a                  __Dnorm
+                  0x002836                  __LDtento
+                  0x002932                  __LDunscale
+                  0x002986                  __Stoflt
+                  0x002bc0                  __Feraise
+                  0x002be4                  ___adddf3
+                  0x002ce0                  ___ledf2
+                  0x002ce0                  ___ltdf2
+                  0x002ce0                  ___eqdf2
+                  0x002cea                  ___divdf3
+                  0x002d9e                  __dpack
+                  0x002df6                  __dunpack2
+                  0x002e18                  __dreturnNaN
+                  0x002e1e                  __dunpack2exit
+                  0x002e28                  ___floatsidf
+                  0x002e30                  ___muldf3
+                  0x002f1c                  ___truncdfsf2
+                  0x002f72                  ___mulp32peds3
+                  0x002f72                  ___mulp32eds3
+                  0x002f72                  ___mulsi3
+                  0x002fca                  ___udivmoddi3
+                  0x0030b0                  ___udivdi3
+                  0x0030be                  ___umoddi3
+                  0x0030c6                  ___divdi3
+                  0x003126                  ___moddi3
+                  0x003182                  ___muldi3
+                  0x0031d4                  __dcompare
+                  0x003226                  __dPropagateNaN
+                  0x003242                  __dtype
+                  0x003266                  __dunpack
+                  0x0032b4                  ___floatdidf
+                  0x0032d4                  ___floatundidf
+                  0x00332a                  ___umuldi3
+                  0x00358c                  _convert_rad
+                  0x003626                  _convert_deg
+                  0x0036b0                  _main
+                  0x00372e                  _InitApp
+                  0x003768                  ___delay32
+                  0x003784                  _ConfigureOscillator
                   0xf80000                  __FBS.sec
                   0xf80002                  __FSS.sec
                   0xf80004                  __FGS.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x00071c                  _ConfigureOscillator
-                  0x0006c8                  _InitApp
-                  0x0002ce                  __AddressError
-                  0x0002ec                  __AltAddressError
-                  0x0002fe                  __AltDMACError
-                  0x0002f8                  __AltMathError
-                  0x0002e6                  __AltOscillatorFail
-                  0x0002f2                  __AltStackError
-                  0x0002e0                  __DMACError
-                  0x000304                  __DefaultInterrupt
+                  0x003784                  _ConfigureOscillator
+                  0x00372e                  _InitApp
+                  0x0002de                  __AddressError
+                  0x0002fc                  __AltAddressError
+                  0x00030e                  __AltDMACError
+                  0x000308                  __AltMathError
+                  0x0002f6                  __AltOscillatorFail
+                  0x000302                  __AltStackError
+                  0x00164c                  __Atexit
+                  0x00158a                  __Closreg
+                  0x0002f0                  __DMACError
+                  0x000a04                  __DNKfflush
+                  0x000314                  __DefaultInterrupt
+                  0x00276a                  __Dnorm
                   0xf80000                  __FBS.sec
                   0xf80004                  __FGS.sec
                   0xf80002                  __FSS.sec
-                  0x0002da                  __MathError
-                  0x0002c8                  __OscillatorFail
-                  0x0002d4                  __StackError
-                  0x00030c                  ___addsf3
-                  0x000700                  ___delay32
-                  0x0003c6                  ___divsf3
-                  0x00044a                  ___fixsfsi
-                  0x0005a0                  ___floatdisf
-                  0x00048c                  ___floatsisf
-                  0x0005c0                  ___floatundisf
-                  0x000538                  ___mulsf3
-                  0x00030a                  ___subsf3
+                  0x002bc0                  __Feraise
+                  0x000d20                  __Frprep
+                  0x000dbc                  __Fwprep
+                  0x00157a                  __Geterrno
+                  0x000e4a                  __Getint
+                  0x00203c                  __Getmem
+                  0x001140                  __Getstr
+                  0x002050                  __LDscale
+                  0x002836                  __LDtento
+                  0x002932                  __LDunscale
+                  0x0002ea                  __MathError
+                  0x0002d8                  __OscillatorFail
+                  0x002144                  __Puttxt
+                  0x0002e4                  __StackError
+                  0x002986                  __Stoflt
+                  0x0022bc                  __Stold
+                  0x00132e                  __Stoll
+                  0x002458                  __Stopfx
+                  0x0013dc                  __Stoull
+                  0x00257a                  __Stoxflt
+                  0x000b14                  __Vacopy
+                  0x000b18                  ___Getfld_cdfFnopuxX
+                  0x001664                  ___Getfloat_cdfFnopuxX
+                  0x001c84                  ___Printf_s
+                  0x001de8                  ___Putfld_s
+                  0x000864                  ___Scanf_cdfFnopuxX
+                  0x002be4                  ___adddf3
+                  0x000496                  ___addsf3
+                  0x003768                  ___delay32
+                  0x002cea                  ___divdf3
+                  0x0030c6                  ___divdi3
+                  0x000550                  ___divsf3
+                  0x002ce0                  ___eqdf2
+                  0x0005d4                  ___eqsf2
+                  0x0005d8                  ___fixsfsi
+                  0x0032b4                  ___floatdidf
+                  0x000764                  ___floatdisf
+                  0x002e28                  ___floatsidf
+                  0x00061a                  ___floatsisf
+                  0x0032d4                  ___floatundidf
+                  0x000784                  ___floatundisf
+                  0x002ce0                  ___ledf2
+                  0x0005d4                  ___lesf2
+                  0x002ce0                  ___ltdf2
+                  0x0005d4                  ___ltsf2
+                  0x003126                  ___moddi3
+                  0x002e30                  ___muldf3
+                  0x003182                  ___muldi3
+                  0x002f72                  ___mulp32eds3
+                  0x002f72                  ___mulp32peds3
+                  0x0006c6                  ___mulsf3
+                  0x002f72                  ___mulsi3
+                  0x000494                  ___subsf3
+                  0x002f1c                  ___truncdfsf2
+                  0x0030b0                  ___udivdi3
+                  0x002fca                  ___udivmoddi3
+                  0x0030be                  ___umoddi3
+                  0x00332a                  ___umuldi3
+                  0x003226                  __dPropagateNaN
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
-                  0x000518                  __fPropagateNaN
-                  0x00052a                  __fbopExit
-                  0x000532                  __fbopReturnNaN
-                  0x000492                  __fpack
-                  0x0004de                  __funpack
-                  0x000508                  __funpack2
+                  0x0031d4                  __dcompare
+                  0x002d9e                  __dpack
+                  0x002e18                  __dreturnNaN
+                  0x003242                  __dtype
+                  0x003266                  __dunpack
+                  0x002df6                  __dunpack2
+                  0x002e1e                  __dunpack2exit
+                  0x0006a6                  __fPropagateNaN
+                  0x0006b8                  __fbopExit
+                  0x0006c0                  __fbopReturnNaN
+                  0x00072e                  __fcompare
+                  0x000620                  __fpack
+                  0x00066c                  __funpack
+                  0x000696                  __funpack2
+                  0x001c74                  __printf_0
+                  0x001c74                  __printf_s
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x00065c                  _convert_deg
-                  0x00061e                  _convert_rad
-                  0x00069a                  _main
+                  0x000854                  __scanf_cdfFnopuxX
+                  0x003626                  _convert_deg
+                  0x00358c                  _convert_rad
+                  0x00159c                  _fclose
+                  0x000a7a                  _fgetc
+                  0x0007f8                  _fputc
+                  0x000c62                  _fputs
+                  0x001e62                  _free
+                  0x001ec6                  _fwrite
+                  0x001e46                  _isalnum
+                  0x0009f4                  _isspace
+                  0x0036b0                  _main
+                  0x001fd4                  _malloc
+                  0x002028                  _memchr
+                  0x000cf2                  _memcpy
+                  0x0007e2                  _puts
+                  0x000abe                  _strchr
+                  0x000d00                  _strlen
+                  0x000d0c                  _strrchr
+                  0x00156c                  _tolower
+                  0x000ad6                  _ungetc
+                  0x00162c                  fclose.XX_elo:_closeall
+                  0x001c58                  printf_s.XXeo:_prout
+                  0x000846                  scanf_cdfFnopuxX.XXeo:_scin
 
 Memory Configuration
 
@@ -290,7 +632,7 @@ LOAD d:/games/mplab/bin/bin/../../lib\libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200        0x41e
+.text             0x000200       0x316e
  *(.init)
  .init            0x000200         0x4c d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
@@ -301,78 +643,292 @@ LOAD d:/games/mplab/bin/bin/../../lib\libfx-elf.a
                   0x000252                  __data_init
  *(.user_init)
  *(.handle)
+ .handle          0x0002c8         0x10 jump_table
  *(.isr*)
- .isr.text        0x0002c8         0x40 build/XC16_dsPIC33FJ128MC802/debug/traps.o
-                  0x0002c8                  __OscillatorFail
-                  0x0002ce                  __AddressError
-                  0x0002d4                  __StackError
-                  0x0002da                  __MathError
-                  0x0002e0                  __DMACError
-                  0x0002e6                  __AltOscillatorFail
-                  0x0002ec                  __AltAddressError
-                  0x0002f2                  __AltStackError
-                  0x0002f8                  __AltMathError
-                  0x0002fe                  __AltDMACError
-                  0x000304                  __DefaultInterrupt
+ .isr.text        0x0002d8         0x40 build/XC16_dsPIC33FJ128MC802/debug/traps.o
+                  0x0002d8                  __OscillatorFail
+                  0x0002de                  __AddressError
+                  0x0002e4                  __StackError
+                  0x0002ea                  __MathError
+                  0x0002f0                  __DMACError
+                  0x0002f6                  __AltOscillatorFail
+                  0x0002fc                  __AltAddressError
+                  0x000302                  __AltStackError
+                  0x000308                  __AltMathError
+                  0x00030e                  __AltDMACError
+                  0x000314                  __DefaultInterrupt
  *(.libc)
+ .libc            0x000318         0x90 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(read.Leo)
+                  0x000318                  _read
+ .libc            0x0003a8         0x12 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+                  0x0003a8                  _close
+ .libc            0x0003ba         0x84 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+                  0x0003ba                  _write
+ .libc            0x00043e         0x12 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+                  0x00043e                  _remove
+ .libc            0x000450         0x28 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+                  0x000450                  _sbrk
+ .libc            0x000478         0x1a d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                  0x000478                  _brk
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x000308          0x2 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
-                  0x000308                  __crt_start_mode
-                  0x000308                  __crt_start_mode_normal
- .libm.subsf3     0x00030a         0xbc d:/games/mplab/bin/bin/../../lib\libm-elf.a(addsf3.eo)
-                  0x00030a                  ___subsf3
-                  0x00030c                  ___addsf3
- .libm.divfs3     0x0003c6         0x84 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divsf3.eo)
-                  0x0003c6                  ___divsf3
- .libm.fixsfsi    0x00044a         0x42 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fixsfsi.eo)
-                  0x00044a                  _(float, int, long long, short, float, short, int)
+                  0x000492          0x2 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
+                  0x000492                  __crt_start_mode
+                  0x000492                  __crt_start_mode_normal
+ .libm.subsf3     0x000494         0xbc d:/games/mplab/bin/bin/../../lib\libm-elf.a(addsf3.eo)
+                  0x000494                  ___subsf3
+                  0x000496                  ___addsf3
+ .libm.divfs3     0x000550         0x84 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divsf3.eo)
+                  0x000550                  ___divsf3
+ .libm.eqsf2      0x0005d4          0x4 d:/games/mplab/bin/bin/../../lib\libm-elf.a(feqltle.eo)
+                  0x0005d4                  ___eqsf2
+                  0x0005d4                  ___ltsf2
+                  0x0005d4                  ___lesf2
+ .libm.fixsfsi    0x0005d8         0x42 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fixsfsi.eo)
+                  0x0005d8                  _(float, int, long long, short, float, short, int)
  .libm.floatsisf
-                  0x00048c          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
-                  0x00048c                  ___floatsisf
- .libm.fpack      0x000492         0x4c d:/games/mplab/bin/bin/../../lib\libm-elf.a(fpack.eo)
-                  0x000492                  __fpack
- .libm.funpack    0x0004de         0x2a d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack.eo)
-                  0x0004de                  __funpack
+                  0x00061a          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
+                  0x00061a                  ___floatsisf
+ .libm.fpack      0x000620         0x4c d:/games/mplab/bin/bin/../../lib\libm-elf.a(fpack.eo)
+                  0x000620                  __fpack
+ .libm.funpack    0x00066c         0x2a d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack.eo)
+                  0x00066c                  __funpack
  .libm.funpack2
-                  0x000508         0x10 d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack2.eo)
-                  0x000508                  __funpack2
+                  0x000696         0x10 d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+                  0x000696                  __funpack2
  .libm.fPropagateNaN
-                  0x000518         0x12 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
-                  0x000518                  __fPropagateNaN
+                  0x0006a6         0x12 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0006a6                  __fPropagateNaN
  .libm.fbobExit
-                  0x00052a          0x8 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
-                  0x00052a                  __fbopExit
+                  0x0006b8          0x8 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0006b8                  __fbopExit
  .libm.fbopReturnNaN
-                  0x000532          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
-                  0x000532                  __fbopReturnNaN
- .libm.mulsf3     0x000538         0x68 d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
-                  0x000538                  ___mulsf3
+                  0x0006c0          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0006c0                  __fbopReturnNaN
+ .libm.mulsf3     0x0006c6         0x68 d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+                  0x0006c6                  ___mulsf3
+ .libm.fcompare
+                  0x00072e         0x36 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fcompare.eo)
+                  0x00072e                  __fcompare
  .libm.floatdisf
-                  0x0005a0         0x20 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
-                  0x0005a0                  ___floatdisf
+                  0x000764         0x20 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
+                  0x000764                  ___floatdisf
  .libm.floatundisf
-                  0x0005c0         0x5e d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
-                  0x0005c0                  ___floatundisf
+                  0x000784         0x5e d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+                  0x000784                  ___floatundisf
+ .libc.puts       0x0007e2         0x16 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(puts.XX_eo)
+                  0x0007e2                  _puts
+ .libc.fputc      0x0007f8         0x4e d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputc.XX_elo)
+                  0x0007f8                  _fputc
+ .libc.scin       0x000846          0xe d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo)
+                  0x000846                  scanf_cdfFnopuxX.XXeo:_scin
+ .libc._scanf_cdfFnopuxX
+                  0x000854         0x10 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo)
+                  0x000854                  __scanf_cdfFnopuxX
+ .libc.__Scanf_cdfFnopuxX
+                  0x000864        0x190 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo)
+                  0x000864                  ___Scanf_cdfFnopuxX
+ .libc.isspace    0x0009f4         0x10 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(isspace.XX_eso)
+                  0x0009f4                  _isspace
+ .libc._DNKfflush
+                  0x000a04         0x76 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_eo)
+                  0x000a04                  __DNKfflush
+ .libc.fgetc      0x000a7a         0x44 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fgetc.XX_eo)
+                  0x000a7a                  _fgetc
+ .libc.strchr     0x000abe         0x18 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_eo)
+                  0x000abe                  _strchr
+ .libc.ungetc     0x000ad6         0x3e d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(ungetc.XX_eo)
+                  0x000ad6                  _ungetc
+ .libc._Vacopy    0x000b14          0x4 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_eo)
+                  0x000b14                  __Vacopy
+ .libc.__Getfld_cdfFnopuxX
+                  0x000b18        0x14a d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdfFnopuxX.XXeo)
+                  0x000b18                  ___Getfld_cdfFnopuxX
+ .libc.fputs      0x000c62         0x90 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputs.XX_eo)
+                  0x000c62                  _fputs
+ .libc.memcpy     0x000cf2          0xe d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+                  0x000cf2                  _memcpy
+ .libc.strlen     0x000d00          0xc d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+                  0x000d00                  _strlen
+ .libc.strrchr    0x000d0c         0x14 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strrchr.XX_eo)
+                  0x000d0c                  _strrchr
+ .libc._Frprep    0x000d20         0x9c d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfrprep.XX_eo)
+                  0x000d20                  __Frprep
+ .libc._Fwprep    0x000dbc         0x8e d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo)
+                  0x000dbc                  __Fwprep
+ .libc._Getint    0x000e4a        0x2bc d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+                  0x000e4a                  __Getint
+ .libc.ranmatch
+                  0x001106         0x3a d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+ .libc._Getstr    0x001140        0x1ee d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+                  0x001140                  __Getstr
+ .libc._Stoll     0x00132e         0xae d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo)
+                  0x00132e                  __Stoll
+ .libc._Stoull    0x0013dc        0x190 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+                  0x0013dc                  __Stoull
+ .libc.tolower    0x00156c          0xe d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(tolower.XX_elso)
+                  0x00156c                  _tolower
+ .libc._Geterrno
+                  0x00157a          0xc d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+                  0x00157a                  __Geterrno
+ .libc.closeallreg
+                  0x001586          0x4 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+ .libc._Closreg
+                  0x00158a         0x12 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                  0x00158a                  __Closreg
+ .libc.fclose     0x00159c         0x90 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                  0x00159c                  _fclose
+ .libc.closeall
+                  0x00162c         0x20 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                  0x00162c                  fclose.XX_elo:_closeall
+ .libc._Atexit    0x00164c         0x18 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xatexit.XX_elo)
+                  0x00164c                  __Atexit
+ .libc.__Getfloat_cdfFnopuxX
+                  0x001664        0x5f4 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo)
+                  0x001664                  ___Getfloat_cdfFnopuxX
+ .libc.prout      0x001c58         0x1c d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(printf_s.XXeo)
+                  0x001c58                  printf_s.XXeo:_prout
+ .libc._printf_s
+                  0x001c74         0x10 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(printf_s.XXeo)
+                  0x001c74                  __printf_s
+                  0x001c74                  __printf_0
+ .libc.__Printf_s
+                  0x001c84        0x164 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xprintf_s.XXeo)
+                  0x001c84                  ___Printf_s
+ .libc.__Putfld_s
+                  0x001de8         0x5e d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xputfld_s.XXeo)
+                  0x001de8                  ___Putfld_s
+ .libc.isalnum    0x001e46         0x1c d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(isalnum.XX_eso)
+                  0x001e46                  _isalnum
+ .libc.free       0x001e62         0x64 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+                  0x001e62                  _free
+ .libc.fwrite     0x001ec6         0xa8 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fwrite.XX_eo)
+                  0x001ec6                  _fwrite
+ .libc.findmem    0x001f6e         0x66 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+ .libc.malloc     0x001fd4         0x54 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                  0x001fd4                  _malloc
+ .libc.memchr     0x002028         0x14 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+                  0x002028                  _memchr
+ .libc._Getmem    0x00203c         0x14 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+                  0x00203c                  __Getmem
+ .libc._LDscale
+                  0x002050         0xf4 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_eo)
+                  0x002050                  __LDscale
+ .libc._Puttxt    0x002144        0x178 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+                  0x002144                  __Puttxt
+ .libc._Stold     0x0022bc        0x19c d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo)
+                  0x0022bc                  __Stold
+ .libc._Stopfx    0x002458        0x122 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstopfx.XX_eo)
+                  0x002458                  __Stopfx
+ .libc._Stoxflt
+                  0x00257a        0x1f0 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoxflt.XX_eo)
+                  0x00257a                  __Stoxflt
+ .libc._Dnorm     0x00276a         0x98 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
+                  0x00276a                  __Dnorm
+ .libc.dmul       0x002802         0x34 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo)
+ .libc._LDtento
+                  0x002836         0xfc d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo)
+                  0x002836                  __LDtento
+ .libc._LDunscale
+                  0x002932         0x54 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_elo)
+                  0x002932                  __LDunscale
+ .libc._Stoflt    0x002986        0x23a d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoflt.XX_elo)
+                  0x002986                  __Stoflt
+ .libc._Feraise
+                  0x002bc0         0x14 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xferaise.XX_eo)
+                  0x002bc0                  __Feraise
+ .libc.doread     0x002bd4          0x4 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(read.Leo)
+ .libc.doclose    0x002bd8          0x4 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+ .libc.dowrite    0x002bdc          0x4 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+ .libc.doremove
+                  0x002be0          0x4 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+ .libm.adddf3     0x002be4         0xfc d:/games/mplab/bin/bin/../../lib\libm-elf.a(adddf3.eo)
+                  0x002be4                  ___adddf3
+ .libm.eqdf2      0x002ce0          0xa d:/games/mplab/bin/bin/../../lib\libm-elf.a(deqltle.eo)
+                  0x002ce0                  ___eqdf2
+                  0x002ce0                  ___ltdf2
+                  0x002ce0                  ___ledf2
+ .libm.divdf3     0x002cea         0xb4 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divdf3.eo)
+                  0x002cea                  ___divdf3
+ .libm.dpack      0x002d9e         0x58 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dpack.eo)
+                  0x002d9e                  __dpack
+ .libm.dunpack2
+                  0x002df6         0x32 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
+                  0x002df6                  __dunpack2
+                  0x002e18                  __dreturnNaN
+                  0x002e1e                  __dunpack2exit
+ .libm.floatsidf
+                  0x002e28          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
+                  0x002e28                  ___floatsidf
+ *fill*           0x002e2e          0x400
+ .libm.muldf3     0x002e30         0xec d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldf3.eo)
+                  0x002e30                  ___muldf3
+ .libm.truncdfsf2
+                  0x002f1c         0x56 d:/games/mplab/bin/bin/../../lib\libm-elf.a(truncdfsf.eo)
+                  0x002f1c                  ___truncdfsf2
+ .libm.mulsi3     0x002f72          0xc d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+                  0x002f72                  ___mulp32peds3
+                  0x002f72                  ___mulsi3
+                  0x002f72                  ___mulp32eds3
+ .libm.__PplusBdi
+                  0x002f7e         0x26 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ .libm.__PminusBdi
+                  0x002fa4         0x26 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ .libm.__udivmoddi3
+                  0x002fca         0xe6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x002fca                  ___udivmoddi3
+ .libm.__udivdi3
+                  0x0030b0          0xe d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x0030b0                  ___udivdi3
+ .libm.__umoddi3
+                  0x0030be          0x8 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x0030be                  ___umoddi3
+ .libm.__divdi3
+                  0x0030c6         0x60 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x0030c6                  ___divdi3
+ .libm.__moddi3
+                  0x003126         0x5c d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x003126                  ___moddi3
+ .libm.__muldi3
+                  0x003182         0x52 d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+                  0x003182                  ___muldi3
+ .libm.dcompare
+                  0x0031d4         0x52 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dcompare.eo)
+                  0x0031d4                  __dcompare
+ .libm.dPropagateNaN
+                  0x003226         0x1c d:/games/mplab/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
+                  0x003226                  __dPropagateNaN
+ .libm.dtype      0x003242         0x24 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dtype.eo)
+                  0x003242                  __dtype
+ .libm.dunpack    0x003266         0x4e d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack.eo)
+                  0x003266                  __dunpack
+ .libm.floatdidf
+                  0x0032b4         0x20 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
+                  0x0032b4                  ___floatdidf
+ .libm.floatundidf
+                  0x0032d4         0x56 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
+                  0x0032d4                  ___floatundidf
+ .libm.umuldi3    0x00332a         0x44 d:/games/mplab/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+                  0x00332a                  ___umuldi3
 
 usercode
  *(usercode)
 
 __FBS             0xf80000          0x2
  *(__FBS.sec*)
- __FBS.sec        0xf80000          0x2 /CW/_FBSÀGï
+ __FBS.sec        0xf80000          0x2 /CW/_FBS€(‹
                   0xf80000                  __FBS.sec
 
 __FSS             0xf80002          0x2
  *(__FSS.sec*)
- __FSS.sec        0xf80002          0x2 /CW/_FSS
+ __FSS.sec        0xf80002          0x2 /CW/_FSSà‡Š
                   0xf80002                  __FSS.sec
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGSðwï
+ __FGS.sec        0xf80004          0x2 /CW/_FGS0ØŠ
                   0xf80004                  __FGS.sec
 
 __FOSCSEL
@@ -402,43 +958,44 @@ __FUID2
 __FUID3
  *(__FUID3.sec*)
 
-.comment
+.comment          0x000000         0x5e
  *(.comment)
+ .comment         0x000000         0x5e d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_eo)
 
-.debug_info       0x000000        0xf71
+.debug_info       0x000000       0x102a
  *(.debug_info)
- .debug_info      0x000000        0x114 build/XC16_dsPIC33FJ128MC802/debug/configuration_bits.o
- .debug_info      0x000114        0x10c build/XC16_dsPIC33FJ128MC802/debug/interrupts.o
- .debug_info      0x000220        0x25f build/XC16_dsPIC33FJ128MC802/debug/main.o
- .debug_info      0x00047f        0x12b build/XC16_dsPIC33FJ128MC802/debug/system.o
- .debug_info      0x0005aa        0x3ec build/XC16_dsPIC33FJ128MC802/debug/traps.o
- .debug_info      0x000996        0x5db build/XC16_dsPIC33FJ128MC802/debug/user.o
+ .debug_info      0x000000        0x113 build/XC16_dsPIC33FJ128MC802/debug/configuration_bits.o
+ .debug_info      0x000113        0x10b build/XC16_dsPIC33FJ128MC802/debug/interrupts.o
+ .debug_info      0x00021e        0x31d build/XC16_dsPIC33FJ128MC802/debug/main.o
+ .debug_info      0x00053b        0x12a build/XC16_dsPIC33FJ128MC802/debug/system.o
+ .debug_info      0x000665        0x3eb build/XC16_dsPIC33FJ128MC802/debug/traps.o
+ .debug_info      0x000a50        0x5da build/XC16_dsPIC33FJ128MC802/debug/user.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x253
+.debug_abbrev     0x000000        0x250
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x1f build/XC16_dsPIC33FJ128MC802/debug/configuration_bits.o
  .debug_abbrev    0x00001f         0x1f build/XC16_dsPIC33FJ128MC802/debug/interrupts.o
- .debug_abbrev    0x00003e         0x92 build/XC16_dsPIC33FJ128MC802/debug/main.o
- .debug_abbrev    0x0000d0         0x34 build/XC16_dsPIC33FJ128MC802/debug/system.o
- .debug_abbrev    0x000104         0x8a build/XC16_dsPIC33FJ128MC802/debug/traps.o
- .debug_abbrev    0x00018e         0xc5 build/XC16_dsPIC33FJ128MC802/debug/user.o
+ .debug_abbrev    0x00003e         0x8f build/XC16_dsPIC33FJ128MC802/debug/main.o
+ .debug_abbrev    0x0000cd         0x34 build/XC16_dsPIC33FJ128MC802/debug/system.o
+ .debug_abbrev    0x000101         0x8a build/XC16_dsPIC33FJ128MC802/debug/traps.o
+ .debug_abbrev    0x00018b         0xc5 build/XC16_dsPIC33FJ128MC802/debug/user.o
 
-.debug_line       0x000000        0x2bf
+.debug_line       0x000000        0x2dc
  *(.debug_line)
  .debug_line      0x000000         0x1a build/XC16_dsPIC33FJ128MC802/debug/configuration_bits.o
  .debug_line      0x00001a         0x1a build/XC16_dsPIC33FJ128MC802/debug/interrupts.o
- .debug_line      0x000034         0xc4 build/XC16_dsPIC33FJ128MC802/debug/main.o
- .debug_line      0x0000f8         0x38 build/XC16_dsPIC33FJ128MC802/debug/system.o
- .debug_line      0x000130         0xd3 build/XC16_dsPIC33FJ128MC802/debug/traps.o
- .debug_line      0x000203         0xbc build/XC16_dsPIC33FJ128MC802/debug/user.o
+ .debug_line      0x000034         0xde build/XC16_dsPIC33FJ128MC802/debug/main.o
+ .debug_line      0x000112         0x38 build/XC16_dsPIC33FJ128MC802/debug/system.o
+ .debug_line      0x00014a         0xd3 build/XC16_dsPIC33FJ128MC802/debug/traps.o
+ .debug_line      0x00021d         0xbf build/XC16_dsPIC33FJ128MC802/debug/user.o
 
-.debug_frame      0x000000        0x1f0
+.debug_frame      0x000000        0x238
  *(.debug_frame)
- .debug_frame     0x000000         0x62 build/XC16_dsPIC33FJ128MC802/debug/main.o
- .debug_frame     0x000062         0x2e build/XC16_dsPIC33FJ128MC802/debug/system.o
- .debug_frame     0x000090        0x132 build/XC16_dsPIC33FJ128MC802/debug/traps.o
- .debug_frame     0x0001c2         0x2e build/XC16_dsPIC33FJ128MC802/debug/user.o
+ .debug_frame     0x000000         0xaa build/XC16_dsPIC33FJ128MC802/debug/main.o
+ .debug_frame     0x0000aa         0x2e build/XC16_dsPIC33FJ128MC802/debug/system.o
+ .debug_frame     0x0000d8        0x132 build/XC16_dsPIC33FJ128MC802/debug/traps.o
+ .debug_frame     0x00020a         0x2e build/XC16_dsPIC33FJ128MC802/debug/user.o
 
 .debug_str        0x000000         0x2e
  *(.debug_str)
@@ -1562,9 +2119,11 @@ LOAD d:/games/mplab/bin/bin/../../lib\libm-elf.a
 LOAD d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a
 END GROUP
 OUTPUT(dist/XC16_dsPIC33FJ128MC802/debug/CodeMeca.debug.elf elf32-pic30)
-LOAD /CW/_FGSðwï
-LOAD /CW/_FSS
-LOAD /CW/_FBSÀGï
+LOAD /CW/_FGS0ØŠ
+LOAD /CW/_FSSà‡Š
+LOAD /CW/_FBS€(‹
+LOAD jump_table
+LOAD data_init
 
 .debug_pubtypes
                   0x000060        0x127
@@ -1582,7 +2141,7 @@ LOAD /CW/_FBSÀGï
                   0x000103         0x84 build/XC16_dsPIC33FJ128MC802/debug/user.o
 
 __c30_signature
-                  0x000187         0x78
+                  0x000187        0x22e
  __c30_signature
                   0x000187          0x6 build/XC16_dsPIC33FJ128MC802/debug/configuration_bits.o
  __c30_signature
@@ -1606,23 +2165,203 @@ __c30_signature
  __c30_signature
                   0x0001c3          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divsf3.eo)
  __c30_signature
-                  0x0001c9          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fixsfsi.eo)
+                  0x0001c9          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(feqltle.eo)
  __c30_signature
-                  0x0001cf          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
+                  0x0001cf          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fixsfsi.eo)
  __c30_signature
-                  0x0001d5          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fpack.eo)
+                  0x0001d5          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
  __c30_signature
-                  0x0001db          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack.eo)
+                  0x0001db          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fpack.eo)
  __c30_signature
-                  0x0001e1          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+                  0x0001e1          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack.eo)
  __c30_signature
-                  0x0001e7          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0001e7          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(funpack2.eo)
  __c30_signature
-                  0x0001ed          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+                  0x0001ed          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(futil.eo)
  __c30_signature
-                  0x0001f3          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
+                  0x0001f3          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
  __c30_signature
-                  0x0001f9          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+                  0x0001f9          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(fcompare.eo)
+ __c30_signature
+                  0x0001ff          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
+ __c30_signature
+                  0x000205          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+ __c30_signature
+                  0x00020b          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(puts.XX_eo)
+ __c30_signature
+                  0x000211          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_eo)
+ __c30_signature
+                  0x000217          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputc.XX_elo)
+ __c30_signature
+                  0x00021d          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(scanf_cdfFnopuxX.XXeo)
+ __c30_signature
+                  0x000223          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo)
+ __c30_signature
+                  0x000229          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(isspace.XX_eso)
+ __c30_signature
+                  0x00022f          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_eo)
+ __c30_signature
+                  0x000235          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fgetc.XX_eo)
+ __c30_signature
+                  0x00023b          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_eo)
+ __c30_signature
+                  0x000241          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(ungetc.XX_eo)
+ __c30_signature
+                  0x000247          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_eo)
+ __c30_signature
+                  0x00024d          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdfFnopuxX.XXeo)
+ __c30_signature
+                  0x000253          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fputs.XX_eo)
+ __c30_signature
+                  0x000259          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+ __c30_signature
+                  0x00025f          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+ __c30_signature
+                  0x000265          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(strrchr.XX_eo)
+ __c30_signature
+                  0x00026b          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfrprep.XX_eo)
+ __c30_signature
+                  0x000271          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo)
+ __c30_signature
+                  0x000277          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+ __c30_signature
+                  0x00027d          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+ __c30_signature
+                  0x000283          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo)
+ __c30_signature
+                  0x000289          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+ __c30_signature
+                  0x00028f          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(tolower.XX_elso)
+ __c30_signature
+                  0x000295          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+ __c30_signature
+                  0x00029b          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+ __c30_signature
+                  0x0002a1          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xatexit.XX_elo)
+ __c30_signature
+                  0x0002a7          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo)
+ __c30_signature
+                  0x0002ad          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(printf_s.XXeo)
+ __c30_signature
+                  0x0002b3          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xprintf_s.XXeo)
+ __c30_signature
+                  0x0002b9          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xputfld_s.XXeo)
+ __c30_signature
+                  0x0002bf          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(isalnum.XX_eso)
+ __c30_signature
+                  0x0002c5          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+ __c30_signature
+                  0x0002cb          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fwrite.XX_eo)
+ __c30_signature
+                  0x0002d1          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+ __c30_signature
+                  0x0002d7          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+ __c30_signature
+                  0x0002dd          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+ __c30_signature
+                  0x0002e3          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_eo)
+ __c30_signature
+                  0x0002e9          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+ __c30_signature
+                  0x0002ef          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo)
+ __c30_signature
+                  0x0002f5          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstopfx.XX_eo)
+ __c30_signature
+                  0x0002fb          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoxflt.XX_eo)
+ __c30_signature
+                  0x000301          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
+ __c30_signature
+                  0x000307          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo)
+ __c30_signature
+                  0x00030d          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_elo)
+ __c30_signature
+                  0x000313          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoflt.XX_elo)
+ __c30_signature
+                  0x000319          0x6 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xferaise.XX_eo)
+ __c30_signature
+                  0x00031f          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(read.Leo)
+ __c30_signature
+                  0x000325          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+ __c30_signature
+                  0x00032b          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+ __c30_signature
+                  0x000331          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+ __c30_signature
+                  0x000337          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+ __c30_signature
+                  0x00033d          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(c30_uart.Leo)
+ __c30_signature
+                  0x000343          0x6 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+ __c30_signature
+                  0x000349          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(adddf3.eo)
+ __c30_signature
+                  0x00034f          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(deqltle.eo)
+ __c30_signature
+                  0x000355          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divdf3.eo)
+ __c30_signature
+                  0x00035b          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dpack.eo)
+ __c30_signature
+                  0x000361          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
+ __c30_signature
+                  0x000367          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
+ __c30_signature
+                  0x00036d          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldf3.eo)
+ __c30_signature
+                  0x000373          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(truncdfsf.eo)
+ __c30_signature
+                  0x000379          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+ __c30_signature
+                  0x00037f          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ __c30_signature
+                  0x000385          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+ __c30_signature
+                  0x00038b          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dcompare.eo)
+ __c30_signature
+                  0x000391          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
+ __c30_signature
+                  0x000397          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dtype.eo)
+ __c30_signature
+                  0x00039d          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(dunpack.eo)
+ __c30_signature
+                  0x0003a3          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
+ __c30_signature
+                  0x0003a9          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
+ __c30_signature
+                  0x0003af          0x6 d:/games/mplab/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+
+.data               0x0800        0x1ec
+ .data              0x0800         0x88 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_eo)
+                    0x0800                  __Stdin
+                    0x0828                  __Stdout
+                    0x0850                  __Stderr
+                    0x0878                  __Files
+ .data              0x0888         0x4a d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+ .data              0x08d2         0x48 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xldtento.XX_elo)
+ .data              0x091a         0x2e d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoxflt.XX_eo)
+ .data              0x0948         0x26 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+ .data              0x096e         0x20 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstold.XX_eo)
+ .data              0x098e         0x20 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xstoflt.XX_elo)
+ .data              0x09ae         0x1a d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xprintf_s.XXeo)
+ .data              0x09c8         0x18 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xgetfloa_cdfFnopuxX.XXeo)
+ .data              0x09e0          0xc d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdfFnopuxX.XXeo)
+
+.bss                0x09ec          0xa
+ .bss               0x09ec          0x4 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+                    0x09ec                  _errno
+                    0x09ee                  __Tls_setup_errno
+ .bss               0x09f0          0x4 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                    0x09f0                  __Aldata
+ .bss               0x09f4          0x2 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+
+.data               0x09f6          0x4
+ .data              0x09f6          0x2 d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                    0x09f6                  __Size_block
+ .data              0x09f8          0x2 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(c30_uart.Leo)
+                    0x09f8                  ___C30_UART
+
+.bss                0x09fa          0x2
+ .bss               0x09fa          0x2 d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                    0x09fa                  ___curbrk
 
 .config_JTAGEN    0xf8000e          0x2
  .config_JTAGEN
@@ -1692,18 +2431,24 @@ __c30_signature
  .aivt._AltDMACError
                   0x00010e          0x2 build/XC16_dsPIC33FJ128MC802/debug/traps.o
 
-.text             0x00061e         0xe2
- .text            0x00061e         0xaa build/XC16_dsPIC33FJ128MC802/debug/main.o
-                  0x00061e                  _convert_rad
-                  0x00065c                  _convert_deg
-                  0x00069a                  _main
- .text            0x0006c8         0x38 build/XC16_dsPIC33FJ128MC802/debug/user.o
-                  0x0006c8                  _InitApp
+.const              0xb36e         0x6a load address 0x00336e  
+ .const             0xb36e         0x6a build/XC16_dsPIC33FJ128MC802/debug/main.o
 
-.init.delay32     0x000700         0x1c
- .init.delay32    0x000700         0x1c d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
-                  0x000700                  ___delay32
+.dinit            0x0033d8        0x1b4
+ .dinit           0x0033d8        0x1b4 data_init
 
-.text             0x00071c          0x6
- .text            0x00071c          0x6 build/XC16_dsPIC33FJ128MC802/debug/system.o
-                  0x00071c                  _ConfigureOscillator
+.text             0x00358c        0x1dc
+ .text            0x00358c        0x1a2 build/XC16_dsPIC33FJ128MC802/debug/main.o
+                  0x00358c                  _convert_rad
+                  0x003626                  _convert_deg
+                  0x0036b0                  _main
+ .text            0x00372e         0x3a build/XC16_dsPIC33FJ128MC802/debug/user.o
+                  0x00372e                  _InitApp
+
+.init.delay32     0x003768         0x1c
+ .init.delay32    0x003768         0x1c d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+                  0x003768                  ___delay32
+
+.text             0x003784          0x6
+ .text            0x003784          0x6 build/XC16_dsPIC33FJ128MC802/debug/system.o
+                  0x003784                  _ConfigureOscillator
