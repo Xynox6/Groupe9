@@ -20,11 +20,10 @@
 #include <stdlib.h>
 #include <libpic30.h>
 #include <p33FJ128MC802.h>
-#include <xc.h>
+#include<math.h>
 
 int convert_rad(float x){ 
     if (x < 0){
-        printf("x cannot be negative");
         float rad = -((x * 2000.0) / 3.141592);
         int test = (int)(rad * 7.37 - 1.0)+3685.0;
         return test;
@@ -38,7 +37,6 @@ int convert_rad(float x){
 
 int convert_deg(int x){
     if (x < 0){
-        printf("x cannot be negative");
         float angle = -((x * 2000.0) / 180.0);
         int test = (int)(angle * 7.37 - 1.0)+3685.0;
         return test;
@@ -49,24 +47,48 @@ int convert_deg(int x){
     return test;
     }
 }
-/*
-void rotate(double angle, double x, double y, double z) {
-    double rad = angle * 3.14 / 180.0;
-    double c = cos(rad);
-    double s = sin(rad);
-    double mat[3][3] = {{c + (1 - c) * x * x, (1 - c) * x * y - s * z, (1 - c) * x * z + s * y},
-                        {(1 - c) * y * x + s * z, c + (1 - c) * y * y, (1 - c) * y * z - s * x},
-                        {(1 - c) * z * x - s * y, (1 - c) * z * y + s * x, c + (1 - c) * z * z}};
-    double vec[3] = {1.0, 2.0, 3.0};
-    double res[3] = {0.0};
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            res[i] += mat[i][j] * vec[j];
-        }
-    }
+
+void matrice(float angle1, float angle2, float angle3, float angle4){
+    //rad conversion
+    double rad1 = angle1 * 3.14 / 180.0;
+    double rad2 = angle2 * 3.14 / 180.0;
+    double rad3 = angle3 * 3.14 / 180.0;
+    double rad4 = angle4 * 3.14 / 180.0;
+    
+    // data a
+    int a2=1;
+    int a3=1;
+    int a4=1;
+    
+    // data cos
+    double c1 = cos(rad1);
+    double c2 = cos(rad2);
+    double c3 = cos(rad3);
+    double c4 = cos(rad4);
+    
+    //data sin
+    double s1 = sin(rad1);
+    double s2 = sin(rad2);
+    double s3 = sin(rad3);
+    double s4 = sin(rad4);
+    
+    double c23 = c2*c3-s2*s3;
+    double s23 = s2*c3+c2*s3;
+    
+    double w1 = c1*(a4*c4*c23-a4*s4*s23+a2*c2+a3*c23);
+    double w2 = s1*(a4*c4*c23-a4*s4*s23+a2*c2+a3*c23);
+    
+    double b1 = c2*(a2+a3*c3)+s2*(-a3*s3);
+    double b2 = c2*(a3*s3)+s2*(a2+a3*c3);
+    
+    double theta1 = atan2(w2,w1);
+    double theta2 = atan2(b2*(a2+a3*c3)-b1*a3*s3,b1*(a2+a3*c3)+b2*a3*s3);
+    double theta3 = acos((b1**2+b2**2-a2**2-a3**2)/2*a2*a3);
+    double theta4 = 3.14*log(sqrt(w1**2+w2**2));
 }
-*/
-int motor(int servo_num, float angle){
+
+// 1 servo control (degree)
+int motor1(int servo_num, float angle){
     
     if (servo_num == 1) {
         PTPER = PDC1 = convert_deg(angle);
@@ -81,7 +103,7 @@ int motor(int servo_num, float angle){
         printf("Invalid servo number.\n");
     }   
 }
-
+// 1 servo control (radian)
 int motor2(int servo_num, float rad){
     
     if (servo_num == 1) {
@@ -97,26 +119,31 @@ int motor2(int servo_num, float rad){
         printf("Invalid servo number.\n");
     }   
 }
+
+// 3 servo control (degree)
+int motor3(float angle1, float angle2, float angle3){
+    PTPER = PDC1 = convert_deg(angle1);
+    PTPER = PDC2 = convert_deg(angle2);
+    PTPER = PDC3 = convert_deg(angle3);
+}
+// 3 servo control (radian)
+int motor4(float rad1, float rad2, float rad3){
+    PTPER = PDC1 = convert_rad(rad1);
+    PTPER = PDC2 = convert_rad(rad2);
+    PTPER = PDC3 = convert_rad(rad3);
+}
+
+
     /* Main Program                                                               */
 int16_t main(void)
 {  
     InitApp(); //user.c
         
     while (1) {
-        __delay_ms(4000);
-        motor(3,0);
-        motor(2,0);
-        motor(1,0);
-        
-        __delay_ms(4000);
-        motor(1,30);
-        motor(2,30);
-        motor(3,30);
-        
-        __delay_ms(4000);
-        motor(1,50);
-        motor(2,50);
-        motor(3,50);
+        motor3(0,0,0);
+        __delay_ms(2000);
+        motor3(30,60,90);
+        __delay_ms(2000);
     }
     return 0;
 }
