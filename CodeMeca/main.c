@@ -72,7 +72,7 @@ unsigned int readADC() {
 }
 
 int convert_adc(unsigned int x){
-    //180-1024 -> 0.175
+    //180 div 1024 -> 0.175
     float angle = 0.175*x;
     return angle;
 }
