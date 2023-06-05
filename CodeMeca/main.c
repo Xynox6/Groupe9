@@ -20,11 +20,16 @@
 #include <stdlib.h>
 #include <libpic30.h>
 #include <p33FJ128MC802.h>
-#include<math.h>
+#include <math.h>
 
 int convert_rad(float x){ 
     if (x < 0){
         float rad = -((x * 2000.0) / 3.141592);
+        int test = (int)(rad * 7.37 - 1.0)+3685.0;
+        return test;
+    }
+    else if (x > 180){
+        float rad = 2000;
         int test = (int)(rad * 7.37 - 1.0)+3685.0;
         return test;
     }
@@ -41,6 +46,11 @@ int convert_deg(int x){
         int test = (int)(angle * 7.37 - 1.0)+3685.0;
         return test;
     }
+    else if (x > 180){
+        float angle = 2000;
+        int test = (int)(angle * 7.37 - 1.0)+3685.0;
+        return test;
+    }
     else{
     float angle = ((x * 2000.0) / 180.0);
     int test = (int)(angle * 7.37 - 1.0)+3685.0;
@@ -48,6 +58,7 @@ int convert_deg(int x){
     }
 }
 
+/*
 void matrice(float angle1, float angle2, float angle3, float angle4){
     //rad conversion
     double rad1 = angle1 * 3.14 / 180.0;
@@ -86,7 +97,7 @@ void matrice(float angle1, float angle2, float angle3, float angle4){
     double theta3 = acos((b1**2+b2**2-a2**2-a3**2)/2*a2*a3);
     double theta4 = 3.14*log(sqrt(w1**2+w2**2));
 }
-
+*/
 // 1 servo control (degree)
 int motor1(int servo_num, float angle){
     
@@ -133,18 +144,35 @@ int motor4(float rad1, float rad2, float rad3){
     PTPER = PDC3 = convert_rad(rad3);
 }
 
+unsigned int readADC() {
+    AD1CON1bits.SAMP = 1; // Commencer la conversion
+    while (!AD1CON1bits.DONE); // Attendre la fin de la conversion
+    return ADC1BUF0; // Récupérer la valeur analogique convertie
+}
 
     /* Main Program                                                               */
 int16_t main(void)
 {  
     InitApp(); //user.c
+    
+
         
     while (1) {
+        
+        PTPER = PDC1 = readADC();
+        
+        
+        /*
         motor3(0,0,0);
         __delay_ms(2000);
+        
         motor3(30,60,90);
         __delay_ms(2000);
-    }
+        
+        motor1(3,180);
+        __delay_ms(2000);
+       */
+   }
     return 0;
 }
 
