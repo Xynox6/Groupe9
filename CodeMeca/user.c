@@ -46,18 +46,18 @@ void InitApp(void)
     P1TCONbits.PTCKPS = 0; // 227
     P1TCONbits.PTMOD = 0; // 217
     
-    PTPER = 3684; // Set PWM time base period
+    PTPER = 11054; // Set PWM time base period
 
     // page 220
     //servo 1
     PWM1CON1bits.PEN1L = 1; // Enable PWM1L1 output
     PWM1CON1bits.PMOD1 = 1;
-    PDC1 = 3684;
+    PDC1 = 11054;
     
     //servo 2
     PWM1CON1bits.PEN2L = 1; // Enable PWM1L2 output
     PWM1CON1bits.PMOD2 = 1;
-    PDC2 = 3684;
+    PDC2 = 11054;
     
     //servo 3
     

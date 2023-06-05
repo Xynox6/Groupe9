@@ -22,6 +22,46 @@
 #include <p33FJ128MC802.h>
 #include <math.h>
 
+/*
+void matrice(float angle1, float angle2, float angle3, float angle4){
+    //rad conversion
+    double rad1 = angle1 * 3.14 / 180.0;
+    double rad2 = angle2 * 3.14 / 180.0;
+    double rad3 = angle3 * 3.14 / 180.0;
+    double rad4 = angle4 * 3.14 / 180.0;
+    
+    // data a
+    int a2=1;
+    int a3=1;
+    int a4=1;
+    
+    // data cos
+    double c1 = cos(rad1);
+    double c2 = cos(rad2);
+    double c3 = cos(rad3);
+    double c4 = cos(rad4);
+    
+    //data sin
+    double s1 = sin(rad1);
+    double s2 = sin(rad2);
+    double s3 = sin(rad3);
+    double s4 = sin(rad4);
+    
+    double c23 = c2*c3-s2*s3;
+    double s23 = s2*c3+c2*s3;
+    
+    double w1 = c1*(a4*c4*c23-a4*s4*s23+a2*c2+a3*c23);
+    double w2 = s1*(a4*c4*c23-a4*s4*s23+a2*c2+a3*c23);
+    
+    double b1 = c2*(a2+a3*c3)+s2*(-a3*s3);
+    double b2 = c2*(a3*s3)+s2*(a2+a3*c3);
+    
+    double theta1 = atan2(w2,w1);
+    double theta2 = atan2(b2*(a2+a3*c3)-b1*a3*s3,b1*(a2+a3*c3)+b2*a3*s3);
+    double theta3 = acos((b1**2+b2**2-a2**2-a3**2)/2*a2*a3);
+    double theta4 = 3.14*log(sqrt(w1**2+w2**2));
+}
+*/
 
 int angle;
     
@@ -31,32 +71,13 @@ unsigned int readADC() {
     return ADC1BUF0; // Récupérer la valeur analogique convertie
 }
 
-
-int convert_rad(float x){ 
-    if (x < 0){
-        float rad = -((x * 2000.0) / 3.141592);
-        int test = (int)(rad * 7.37 - 1.0)+3685.0;
-        return test;
-    }
-    else if (x > 180){
-        float rad = 2000;
-        int test = (int)(rad * 7.37 - 1.0)+3685.0;
-        return test;
-    }
-    else{
-    float rad = ((x * 2000.0) / 3.141592);
-    int test = (int)(rad * 7.37 - 1.0)+3685.0;
-    return test;
-    }
-}
-
-
 int convert_adc(unsigned int x){
-    
+    //180-1024 -> 0.175
     float angle = 0.175*x;
     return angle;
 }
 
+//DEGREE
 int convert_deg(int x){
     if (x < 0){
         float angle = -((x * 2000.0) / 180.0);
@@ -73,6 +94,23 @@ int convert_deg(int x){
     int test = (int)(angle * 7.37 - 1.0)+3685.0;
     return test;
     }
+}
+
+// 1 servo control (degree)
+int motor1(int servo_num, float angle){
+    
+    if (servo_num == 1) {
+        PTPER = PDC1 = convert_deg(angle);
+            
+    } else if (servo_num == 2) {
+        PTPER = PDC2 = convert_deg(angle);
+            
+    } else if (servo_num == 3) {
+        PTPER = PDC3 = convert_deg(angle);
+            
+    } else {
+        printf("Invalid servo number.\n");
+    }   
 }
 
 // 3 servo control (degree)
@@ -121,63 +159,23 @@ void motor3(int angle1, int angle2, int angle3, int angle4, int angle5, int angl
     }
 }
 
-/*
-void matrice(float angle1, float angle2, float angle3, float angle4){
-    //rad conversion
-    double rad1 = angle1 * 3.14 / 180.0;
-    double rad2 = angle2 * 3.14 / 180.0;
-    double rad3 = angle3 * 3.14 / 180.0;
-    double rad4 = angle4 * 3.14 / 180.0;
-    
-    // data a
-    int a2=1;
-    int a3=1;
-    int a4=1;
-    
-    // data cos
-    double c1 = cos(rad1);
-    double c2 = cos(rad2);
-    double c3 = cos(rad3);
-    double c4 = cos(rad4);
-    
-    //data sin
-    double s1 = sin(rad1);
-    double s2 = sin(rad2);
-    double s3 = sin(rad3);
-    double s4 = sin(rad4);
-    
-    double c23 = c2*c3-s2*s3;
-    double s23 = s2*c3+c2*s3;
-    
-    double w1 = c1*(a4*c4*c23-a4*s4*s23+a2*c2+a3*c23);
-    double w2 = s1*(a4*c4*c23-a4*s4*s23+a2*c2+a3*c23);
-    
-    double b1 = c2*(a2+a3*c3)+s2*(-a3*s3);
-    double b2 = c2*(a3*s3)+s2*(a2+a3*c3);
-    
-    double theta1 = atan2(w2,w1);
-    double theta2 = atan2(b2*(a2+a3*c3)-b1*a3*s3,b1*(a2+a3*c3)+b2*a3*s3);
-    double theta3 = acos((b1**2+b2**2-a2**2-a3**2)/2*a2*a3);
-    double theta4 = 3.14*log(sqrt(w1**2+w2**2));
-}
-*/
-
-/*
-// 1 servo control (degree)
-int motor1(int servo_num, float angle){
-    
-    if (servo_num == 1) {
-        PTPER = PDC1 = convert_deg(angle);
-            
-    } else if (servo_num == 2) {
-        PTPER = PDC2 = convert_deg(angle);
-            
-    } else if (servo_num == 3) {
-        PTPER = PDC3 = convert_deg(angle);
-            
-    } else {
-        printf("Invalid servo number.\n");
-    }   
+//RADIAN
+int convert_rad(float x){ 
+    if (x < 0){
+        float rad = -((x * 2000.0) / 3.141592);
+        int test = (int)(rad * 7.37 - 1.0)+3685.0;
+        return test;
+    }
+    else if (x > 180){
+        float rad = 2000;
+        int test = (int)(rad * 7.37 - 1.0)+3685.0;
+        return test;
+    }
+    else{
+    float rad = ((x * 2000.0) / 3.141592);
+    int test = (int)(rad * 7.37 - 1.0)+3685.0;
+    return test;
+    }
 }
 // 1 servo control (radian)
 int motor2(int servo_num, float rad){
@@ -196,17 +194,12 @@ int motor2(int servo_num, float rad){
     }   
 }
 
-}
 // 3 servo control (radian)
 int motor4(float rad1, float rad2, float rad3){
     PTPER = PDC1 = convert_rad(rad1);
     PTPER = PDC2 = convert_rad(rad2);
     PTPER = PDC3 = convert_rad(rad3);
 }
-*/
-
-//180-1024 -> 0.175
-
 
 
     /* Main Program                                                               */
@@ -216,13 +209,20 @@ int16_t main(void)
     
     while (1) {
     
-    //motor3(angle de base moteur bas, angle de base mot milieu, adb mot haut, angle voulu mot bas, angle voulu mot milieu, angle voulu mot haut))
+    //motor3(angle init moteur bas, milieu, haut, angle recherché mot bas, milieu, haut))
     motor3(90, 90, 90, 0, 120, 0);
     __delay_ms(1000);
+    
     motor3(0, 120, 0, 90, 90, 90);
     __delay_ms(1000);   
+    
+    motor3(90, 90, 90, 180, 60, 180);
+    __delay_ms(1000);   
+    
+    motor3(180, 60, 180, 90, 90, 90);
+    __delay_ms(1000); 
+    
     }
-      
     return 0;
 }
 
