@@ -76,10 +76,49 @@ int convert_deg(int x){
 }
 
 // 3 servo control (degree)
-int motor3(float angle1, float angle2, float angle3){
+void motor3(int angle1, int angle2, int angle3, int angle4, int angle5, int angle6) {
     PTPER = PDC1 = convert_deg(angle1);
     PTPER = PDC2 = convert_deg(angle2);
     PTPER = PDC3 = convert_deg(angle3);
+    
+    while( angle1 != angle4){
+        
+        if (angle1 > angle4){
+            angle1--;
+            PTPER = PDC1 = convert_deg(angle1);
+        }
+        else{
+            angle1++;
+            PTPER = PDC1 = convert_deg(angle1);
+        }
+        __delay_ms(50);
+    }
+
+    while( angle2 != angle5){
+        
+        if (angle2 > angle5){
+            angle2--;
+            PTPER = PDC2 = convert_deg(angle2);
+        }
+        else{
+            angle2++;
+            PTPER = PDC2 = convert_deg(angle2);
+        }
+        __delay_ms(25);
+    }
+
+    while( angle3 != angle6){
+        
+        if (angle3 > angle6){
+            angle3--;
+            PTPER = PDC3 = convert_deg(angle3);
+        }
+        else{
+            angle3++;
+            PTPER = PDC3 = convert_deg(angle3);
+        }
+        __delay_ms(25);
+    }
 }
 
 /*
@@ -175,19 +214,15 @@ int16_t main(void)
 {  
     InitApp(); //user.c
     
-
-        
     while (1) {
-        
-        motor3(0,0,0);
-        __delay_ms(1000);
-        
-        motor3(0,0,90);
-        __delay_ms(1000);
-        
-        //PTPER = PDC1 = convert_deg(convert_adc(readADC()));
-        
-   }
+    
+    //motor3(angle de base moteur bas, angle de base mot milieu, adb mot haut, angle voulu mot bas, angle voulu mot milieu, angle voulu mot haut))
+    motor3(90, 90, 90, 0, 120, 0);
+    __delay_ms(1000);
+    motor3(0, 120, 0, 90, 90, 90);
+    __delay_ms(1000);   
+    }
+      
     return 0;
 }
 

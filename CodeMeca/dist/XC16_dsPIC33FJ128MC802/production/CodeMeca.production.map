@@ -121,12 +121,12 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x460           0x690  (1680)
-.text                        0x660               0x27e           0x3bd  (957)
-.init.delay32                0x8de                0x1c            0x2a  (42)
-.dinit                       0x8fa                 0x8             0xc  (12)
-.text                        0x902                 0x6             0x9  (9)
+.text                        0x660               0x31e           0x4ad  (1197)
+.init.delay32                0x97e                0x1c            0x2a  (42)
+.dinit                       0x99a                 0x8             0xc  (12)
+.text                        0x9a2                 0x6             0x9  (9)
 
-                 Total "program" memory used (bytes):          0xa8c  (2700) 2%
+                 Total "program" memory used (bytes):          0xb7c  (2940) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x4000]
@@ -201,18 +201,18 @@ External Symbols in Program Memory (by address):
                   0x00074a                  _convert_adc
                   0x000766                  _convert_deg
                   0x00081e                  _motor3
-                  0x00085c                  _main
-                  0x000880                  _InitApp
-                  0x0008de                  ___delay32
-                  0x000902                  _ConfigureOscillator
+                  0x0008f4                  _main
+                  0x000922                  _InitApp
+                  0x00097e                  ___delay32
+                  0x0009a2                  _ConfigureOscillator
                   0xf80000                  __FBS.sec
                   0xf80002                  __FSS.sec
                   0xf80004                  __FGS.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x000902                  _ConfigureOscillator
-                  0x000880                  _InitApp
+                  0x0009a2                  _ConfigureOscillator
+                  0x000922                  _InitApp
                   0x0002ce                  __AddressError
                   0x0002ec                  __AltAddressError
                   0x0002fe                  __AltDMACError
@@ -228,7 +228,7 @@ External Symbols in Program Memory (by name):
                   0x0002c8                  __OscillatorFail
                   0x0002d4                  __StackError
                   0x00030c                  ___addsf3
-                  0x0008de                  ___delay32
+                  0x00097e                  ___delay32
                   0x0003c6                  ___divsf3
                   0x00044a                  ___eqsf2
                   0x000452                  ___fixsfsi
@@ -256,7 +256,7 @@ External Symbols in Program Memory (by name):
                   0x00074a                  _convert_adc
                   0x000766                  _convert_deg
                   0x000674                  _convert_rad
-                  0x00085c                  _main
+                  0x0008f4                  _main
                   0x00081e                  _motor3
                   0x000660                  _readADC
 
@@ -407,17 +407,17 @@ usercode
 
 __FBS             0xf80000          0x2
  *(__FBS.sec*)
- __FBS.sec        0xf80000          0x2 /CW/_FBS@×
+ __FBS.sec        0xf80000          0x2 /CW/_FBS
                   0xf80000                  __FBS.sec
 
 __FSS             0xf80002          0x2
  *(__FSS.sec*)
- __FSS.sec        0xf80002          0x2 /CW/_FSSÐf
+ __FSS.sec        0xf80002          0x2 /CW/_FSSÀp
                   0xf80002                  __FSS.sec
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGS 6
+ __FGS.sec        0xf80004          0x2 /CW/_FGSÐ€
                   0xf80004                  __FGS.sec
 
 __FOSCSEL
@@ -450,33 +450,33 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x1a42
+.debug_info       0x000000       0x1a71
  *(.debug_info)
  .debug_info      0x000000        0x113 build/XC16_dsPIC33FJ128MC802/production/configuration_bits.o
  .debug_info      0x000113        0x10b build/XC16_dsPIC33FJ128MC802/production/interrupts.o
- .debug_info      0x00021e        0x5b6 build/XC16_dsPIC33FJ128MC802/production/main.o
- .debug_info      0x0007d4        0x12a build/XC16_dsPIC33FJ128MC802/production/system.o
- .debug_info      0x0008fe        0x3eb build/XC16_dsPIC33FJ128MC802/production/traps.o
- .debug_info      0x000ce9        0xd59 build/XC16_dsPIC33FJ128MC802/production/user.o
+ .debug_info      0x00021e        0x5e5 build/XC16_dsPIC33FJ128MC802/production/main.o
+ .debug_info      0x000803        0x12a build/XC16_dsPIC33FJ128MC802/production/system.o
+ .debug_info      0x00092d        0x3eb build/XC16_dsPIC33FJ128MC802/production/traps.o
+ .debug_info      0x000d18        0xd59 build/XC16_dsPIC33FJ128MC802/production/user.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x308
+.debug_abbrev     0x000000        0x31f
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x1f build/XC16_dsPIC33FJ128MC802/production/configuration_bits.o
  .debug_abbrev    0x00001f         0x1f build/XC16_dsPIC33FJ128MC802/production/interrupts.o
- .debug_abbrev    0x00003e        0x147 build/XC16_dsPIC33FJ128MC802/production/main.o
- .debug_abbrev    0x000185         0x34 build/XC16_dsPIC33FJ128MC802/production/system.o
- .debug_abbrev    0x0001b9         0x8a build/XC16_dsPIC33FJ128MC802/production/traps.o
- .debug_abbrev    0x000243         0xc5 build/XC16_dsPIC33FJ128MC802/production/user.o
+ .debug_abbrev    0x00003e        0x15e build/XC16_dsPIC33FJ128MC802/production/main.o
+ .debug_abbrev    0x00019c         0x34 build/XC16_dsPIC33FJ128MC802/production/system.o
+ .debug_abbrev    0x0001d0         0x8a build/XC16_dsPIC33FJ128MC802/production/traps.o
+ .debug_abbrev    0x00025a         0xc5 build/XC16_dsPIC33FJ128MC802/production/user.o
 
-.debug_line       0x000000        0x2f0
+.debug_line       0x000000        0x314
  *(.debug_line)
  .debug_line      0x000000         0x1a build/XC16_dsPIC33FJ128MC802/production/configuration_bits.o
  .debug_line      0x00001a         0x1a build/XC16_dsPIC33FJ128MC802/production/interrupts.o
- .debug_line      0x000034         0xeb build/XC16_dsPIC33FJ128MC802/production/main.o
- .debug_line      0x00011f         0x38 build/XC16_dsPIC33FJ128MC802/production/system.o
- .debug_line      0x000157         0xd3 build/XC16_dsPIC33FJ128MC802/production/traps.o
- .debug_line      0x00022a         0xc6 build/XC16_dsPIC33FJ128MC802/production/user.o
+ .debug_line      0x000034        0x10f build/XC16_dsPIC33FJ128MC802/production/main.o
+ .debug_line      0x000143         0x38 build/XC16_dsPIC33FJ128MC802/production/system.o
+ .debug_line      0x00017b         0xd3 build/XC16_dsPIC33FJ128MC802/production/traps.o
+ .debug_line      0x00024e         0xc6 build/XC16_dsPIC33FJ128MC802/production/user.o
 
 .debug_frame      0x000000        0x246
  *(.debug_frame)
@@ -1608,9 +1608,9 @@ LOAD d:/games/mplab/bin/bin/../../lib\libm-elf.a
 LOAD d:/games/mplab/bin/bin/../../lib\liblega-c-elf.a
 END GROUP
 OUTPUT(dist/XC16_dsPIC33FJ128MC802/production/CodeMeca.production.elf elf32-pic30)
-LOAD /CW/_FGS 6
-LOAD /CW/_FSSÐf
-LOAD /CW/_FBS@×
+LOAD /CW/_FGSÐ€
+LOAD /CW/_FSSÀp
+LOAD /CW/_FBS
 LOAD data_init
 
 .debug_pubtypes
@@ -1751,24 +1751,24 @@ __c30_signature
  .aivt._AltDMACError
                   0x00010e          0x2 build/XC16_dsPIC33FJ128MC802/production/traps.o
 
-.text             0x000660        0x27e
- .text            0x000660        0x220 build/XC16_dsPIC33FJ128MC802/production/main.o
+.text             0x000660        0x31e
+ .text            0x000660        0x2c2 build/XC16_dsPIC33FJ128MC802/production/main.o
                   0x000660                  _readADC
                   0x000674                  _convert_rad
                   0x00074a                  _convert_adc
                   0x000766                  _convert_deg
                   0x00081e                  _motor3
-                  0x00085c                  _main
- .text            0x000880         0x5e build/XC16_dsPIC33FJ128MC802/production/user.o
-                  0x000880                  _InitApp
+                  0x0008f4                  _main
+ .text            0x000922         0x5c build/XC16_dsPIC33FJ128MC802/production/user.o
+                  0x000922                  _InitApp
 
-.init.delay32     0x0008de         0x1c
- .init.delay32    0x0008de         0x1c d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
-                  0x0008de                  ___delay32
+.init.delay32     0x00097e         0x1c
+ .init.delay32    0x00097e         0x1c d:/games/mplab/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+                  0x00097e                  ___delay32
 
-.dinit            0x0008fa          0x8
- .dinit           0x0008fa          0x8 data_init
+.dinit            0x00099a          0x8
+ .dinit           0x00099a          0x8 data_init
 
-.text             0x000902          0x6
- .text            0x000902          0x6 build/XC16_dsPIC33FJ128MC802/production/system.o
-                  0x000902                  _ConfigureOscillator
+.text             0x0009a2          0x6
+ .text            0x0009a2          0x6 build/XC16_dsPIC33FJ128MC802/production/system.o
+                  0x0009a2                  _ConfigureOscillator
