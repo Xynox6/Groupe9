@@ -24,7 +24,6 @@
 /* <Initialize variables in user.h and insert code for user algorithms.> */
 
 // Variable pour stocker la valeur analogique
-unsigned int analogValue;
 
 void InitApp(void)
 {
@@ -34,12 +33,12 @@ void InitApp(void)
     TRISBbits.TRISB11 = 0;
     //TRISAbits.TRISA0 = 0;
     
-    ADPCFGbits.PCFG0 = 0; // Définir la broche comme entrée analogique
+    ADPCFGbits.PCFG1 = 0; // Définir la broche comme entrée analogique
     AD1CON1bits.AD12B = 0; // Résolution 10 bits
     AD1CON1bits.FORM = 0; // Format de sortie entier non signé
     AD1CON2bits.VCFG = 0; // Tension de référence VDD et VSS
-    AD1CON3bits.ADCS = 1; // Horloge ADC : TAD = 3*Tcy
-    AD1CHS0bits.CH0SA = 00000; // Sélectionner la broche analogique
+    AD1CON3bits.ADCS = 2; // Horloge ADC : TAD = 3*Tcy
+    AD1CHS0bits.CH0SA = 00001; // Sélectionner la broche analogique
     AD1CON1bits.ADON = 1; // Activer le module ADC
   
     // duty cycle
