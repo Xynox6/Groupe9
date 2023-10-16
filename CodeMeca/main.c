@@ -210,17 +210,53 @@ int16_t main(void)
     while (1) {
     
     //motor3(angle init moteur bas, milieu, haut, angle recherché mot bas, milieu, haut))
-    motor3(90, 90, 90, 0, 120, 0);
+    
+    //only motor1
+    __delay_ms(2000);
+    motor3(90, 90, 90, 150, 90, 90);
     __delay_ms(1000);
     
-    motor3(0, 120, 0, 90, 90, 90);
-    __delay_ms(1000);   
+    motor3(150, 90, 90, 90, 90, 90);
+    __delay_ms(1000);
     
-    motor3(90, 90, 90, 180, 60, 180);
-    __delay_ms(1000);   
-    
-    motor3(180, 60, 180, 90, 90, 90);
+    //only motor2
+    motor3(90, 90, 90, 90, 130, 90);
     __delay_ms(1000); 
+    
+    motor3(90, 130, 90, 90, 90, 90);
+    __delay_ms(1000); 
+    
+    motor3(90, 90, 90, 90, 30, 90);
+    __delay_ms(1000); 
+    
+    motor3(90, 30, 90, 90, 90, 90);
+    __delay_ms(1000); 
+    
+    //only motor3
+    motor3(90, 90, 90, 90, 90, 160);
+    __delay_ms(1000);   
+    
+    motor3(90, 90, 160, 90, 90, 90);
+    __delay_ms(1000);   
+    
+    motor3(90, 90, 90, 90, 90, 50);
+    __delay_ms(1000); 
+    
+    motor3(90, 90, 50, 90, 90, 90);
+    __delay_ms(2000); 
+    
+    //others patterns with 3 motors
+    
+    motor3(90, 90, 90, 80, 120, 50);
+    __delay_ms(1000);
+    
+    motor3(80, 120, 50, 80, 90, 60);
+    __delay_ms(1000);   
+    
+    motor3(80, 90, 60, 90, 60, 90);
+    __delay_ms(1000);   
+    
+    motor3(90, 60, 90, 90, 90, 90);
     
     }
     return 0;

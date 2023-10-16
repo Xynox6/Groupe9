@@ -63,7 +63,7 @@ void InitApp(void)
     
     PWM1CON1bits.PEN3L = 1;  // Enable PWM1H1 output
     PWM1CON1bits.PMOD3 = 1;
-    PDC3 = 3684;
+    PDC3 = 11054;
     
     // page 217
     P1TCONbits.PTEN = 1;
